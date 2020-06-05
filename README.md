@@ -1,17 +1,17 @@
 # MIPS Instructions Converter
 
 ## Convert .txt files with MIPS instructions to .txt file with binary correspondents code
-'''
+```
 LW, $S0, 1235, $ZERO **=** 10001100000100000000010011010011
 BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
-'''
+```
 
 ###### What is MIPS architecture?
-[O que é? - pt-br] (https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
-[What is? - en] (https://www.mips.com/products/architectures/)
+[O que é? - pt-br](https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
+[What is? - en](https://www.mips.com/products/architectures/)
 
 ###### Developed for Architecture Computers discipline at Instituto Federal de Minas Gerais
-[Instituto Federal de Minas Gerais - Campus Sabará] (https://www.ifmg.edu.br/sabara)
+[Instituto Federal de Minas Gerais - Campus Sabará](https://www.ifmg.edu.br/sabara)
 
 ###### Instructions recognized contemplated (until now):
 	1. **I type**
@@ -24,7 +24,7 @@ BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
 		- J, JAL;
 
 ###### About me:
- [Linkedin] (https://www.linkedin.com/in/lucas-laet-b47452187/)
+ [Linkedin](https://www.linkedin.com/in/lucas-laet-b47452187/)
  :e-mail: lucas.laetlira@gmail.com
 
 ###### Feel free to contribute!
