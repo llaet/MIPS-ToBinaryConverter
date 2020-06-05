@@ -134,7 +134,8 @@ public class TextReader extends javax.swing.JFrame {
 				qv.close();
 				setProgressBarPercentage(15);
 				// instance TextWriter class to write a new document
-				new TextWriter(txtDocument);
+				TextWriter writer = new TextWriter(txtDocument);
+				writer.writeDecodedTextDocument();
 				setProgressBarPercentage(100);
 				JOptionPane.showMessageDialog(null, "Proccess sucessfully concluded. The file named"
 						+ " decoded-instructions.txt is avaliable on project directory.");
