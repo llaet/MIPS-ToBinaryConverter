@@ -15,6 +15,10 @@ public class DecodingManager {
 
 	private List<String> decodedInstructions;
 
+	public DecodingManager() {
+		decodedInstructions = new ArrayList<>();
+	}
+
 	/*
 	 * processes a .txt file removing: ',' - '(' - ')' or ' ' chars
 	 * 

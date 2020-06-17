@@ -60,7 +60,7 @@ public class RInstructionsDecoder extends CommonMethods {
 	/*
 	 * @return String with decoded Move To or Jump R instructions
 	 */
-	private String decodeMoveToOrJumpInstruction(String operation, String registerRS) {
+	private String decodeMoveToOrJRInstruction(String operation, String registerRS) {
 		String decodedInstruction = "";
 		decodedInstruction += attachShamt("0", 6);
 		decodedInstruction += attachRegister(registerRS);
@@ -109,7 +109,7 @@ public class RInstructionsDecoder extends CommonMethods {
 			if (list.get(0).equals("MFHI") || list.get(0).equals("MFLO")) {
 				return decodeMoveFromInstruction(list.get(0), list.get(1));
 			}
-			return decodeMoveToOrJumpInstruction(list.get(0), list.get(1));
+			return decodeMoveToOrJRInstruction(list.get(0), list.get(1));
 		case 3:
 			if (list.get(0).equals("JALR")) {
 				return decodeJALRInstruction(list.get(0), list.get(1), list.get(2));
@@ -136,12 +136,10 @@ public class RInstructionsDecoder extends CommonMethods {
 	 * @return String with shamt binary value
 	 */
 	private String attachShamt(String shamtValue, int indexSize) {
-		if (Integer.parseInt(shamtValue) == 0) {
-			return "00000";
-		} else if (shamtValue.contains("-")) {
+		if (shamtValue.contains("-")) {
 			return new DecimalToBinary().convertToNegativeBinary(shamtValue, indexSize);
 		}
-		return new DecimalToBinary().convertToBinary(shamtValue, 6);
+		return new DecimalToBinary().convertToBinary(shamtValue, indexSize);
 	}
 
 	/*
