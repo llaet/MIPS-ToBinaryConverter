@@ -2,19 +2,16 @@
 
 ## Convert .txt files with MIPS instructions to .txt file with binary correspondents code
 
-'''
-LW, $S0, 1235, $ZERO **=** 10001100000100000000010011010011
-BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
-'''
+	LW, $S0, 1235, $ZERO **=** 10001100000100000000010011010011
+	BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
 
 ###### Technologies
  - Java 1.8
  - Git 2.9.0
  
 ###### How to clone the project
-	'''
 	git clone https://github.com/llaet/MIPS-ToBinaryConverter
-	'''
+	
 ###### What is MIPS architecture?
 [O que é? - pt-br] (https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
 [What is? - en] (https://www.mips.com/products/architectures/)
