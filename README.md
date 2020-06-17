@@ -12,8 +12,9 @@ BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
  - Git 2.9.0
  
 ###### How to clone the project
+	'''
 	git clone https://github.com/llaet/MIPS-ToBinaryConverter
-
+	'''
 ###### What is MIPS architecture?
 [O que é? - pt-br] (https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
 [What is? - en] (https://www.mips.com/products/architectures/)
@@ -32,7 +33,7 @@ BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
 		- J, JAL;
 
 ###### About me:
-  - [Linkedin] (https://www.linkedin.com/in/lucas-laet-b47452187/)
+  - [Linkedin](https://www.linkedin.com/in/lucas-laet-b47452187/)
   - :e-mail: lucas.laetlira@gmail.com
 
 ###### Feel free to contribute!
