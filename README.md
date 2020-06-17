@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MIPS Instructions Converter
 
 ## Convert .txt files with MIPS instructions to .txt file with binary correspondents code
@@ -8,10 +7,9 @@ BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
 '''
 
 ###### Technologies
-'''
  - Java 1.8
  - Git 2.9.0
-'''
+ 
 ###### How to clone the project
 	git clone https://github.com/llaet/MIPS-ToBinaryConverter
 
@@ -65,9 +63,7 @@ BEQ, $S1, $S2, -8 = 00010010001100101111111111111000
 		- J, JAL;
 
 ###### About me:
- [Linkedin](https://www.linkedin.com/in/lucas-laet-b47452187/)
- :e-mail: lucas.laetlira@gmail.com
+  - [Linkedin](https://www.linkedin.com/in/lucas-laet-b47452187/)
+  - :e-mail: lucas.laetlira@gmail.com
 
 ###### Feel free to contribute!
-	
->>>>>>> 95a548366e77e10781470cdee649c1baea69c188
