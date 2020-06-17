@@ -13,11 +13,11 @@
 	git clone https://github.com/llaet/MIPS-ToBinaryConverter
 	
 ###### What is MIPS architecture?
-[O que é? - pt-br] (https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
-[What is? - en] (https://www.mips.com/products/architectures/)
+ - [O que é? - pt-br](https://www.embarcados.com.br/arquitetura-de-conjunto-de-instrucoes-mips/)
+ - [What is? - en](https://www.mips.com/products/architectures/)
 
 ###### Developed for Architecture Computers discipline at Instituto Federal de Minas Gerais
-[Instituto Federal de Minas Gerais - Campus Sabará] (https://www.ifmg.edu.br/sabara)
+[Instituto Federal de Minas Gerais - Campus Sabará](https://www.ifmg.edu.br/sabara)
 
 ###### Instructions recognized contemplated (until now):
 	1. **I type**
