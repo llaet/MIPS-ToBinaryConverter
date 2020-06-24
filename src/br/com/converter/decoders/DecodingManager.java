@@ -19,10 +19,6 @@ public class DecodingManager {
 		decodedInstructions = new ArrayList<>();
 	}
 
-	public DecodingManager() {
-		decodedInstructions = new ArrayList<>();
-	}
-
 	/*
 	 * processes a .txt file removing: ',' - '(' - ')' or ' ' chars
 	 * 
