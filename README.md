@@ -9,9 +9,6 @@
 <<<<<<< HEAD
 '''
  - Java 11
-=======
- - Java 1.8
->>>>>>> 00e759869d146473bad8386bec96dc4f1007b72a
  - Git 2.9.0
  
 ###### How to clone the project
