@@ -33,7 +33,7 @@ public class TextWriter {
 		try {
 			DecodingManager decoder = new DecodingManager();
 			List<String> decodedInstructions = decoder.textProcessing(textDocument);
-			BufferedWriter fileWriter = new BufferedWriter(new FileWriter(".\\decoded-instructions.txt"));
+			BufferedWriter fileWriter = new BufferedWriter(new FileWriter(".\\instrucoes-convertidas.txt"));
 			for (String line : decodedInstructions) {
 				fileWriter.write(line);
 				fileWriter.newLine();

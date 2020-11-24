@@ -9,7 +9,7 @@ BEQ, $S1, $S2, -8 **=** 00010010001100101111111111111000
 
 ###### Technologies
 '''
- - Java 1.8
+ - Java 11
  - Git 2.9.0
 '''
 ###### How to clone the project

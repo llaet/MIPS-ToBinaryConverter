@@ -63,11 +63,11 @@ public class TextReader extends javax.swing.JFrame {
 		jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
 		jLabel1.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
-		jLabel1.setText("       MIPS CONVERTER");
+		jLabel1.setText("       CONVERSOR MIPS");
 
 		btnOpenFile.setBackground(new java.awt.Color(204, 0, 0));
 		btnOpenFile.setForeground(new java.awt.Color(255, 255, 255));
-		btnOpenFile.setText("Open TXT File");
+		btnOpenFile.setText("Abrir Arquivo .TXT");
 		btnOpenFile.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		btnOpenFile.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,6 +123,7 @@ public class TextReader extends javax.swing.JFrame {
 				setProgressBarVisibility(true);
 				// set on progress bar display
 				progressBar.setStringPainted(true);
+				
 				txtDocument = new ArrayList<>();
 				// scanner receive .txt document
 				Scanner qv = new Scanner(openFileChooser.getSelectedFile());
@@ -130,6 +131,7 @@ public class TextReader extends javax.swing.JFrame {
 				while (qv.hasNextLine()) {
 					txtDocument.add(qv.nextLine().toUpperCase());
 				}
+				
 				// close Scanner object
 				qv.close();
 				setProgressBarPercentage(15);
@@ -137,15 +139,15 @@ public class TextReader extends javax.swing.JFrame {
 				TextWriter writer = new TextWriter(txtDocument);
 				writer.writeDecodedTextDocument();
 				setProgressBarPercentage(100);
-				JOptionPane.showMessageDialog(null, "Proccess sucessfully concluded. The file named"
-						+ " decoded-instructions.txt is avaliable on project directory.");
+				JOptionPane.showMessageDialog(null, "Processo concluído com sucesso. Um arquivo chamado"
+						+ " instrucoes-convertidas.txt está disponível na pasta deste programa.");
 				progressBar.setVisible(false);
 				setButtonVisibility(true);
 			} catch (IOException ioe) {
 				JOptionPane.showMessageDialog(null, ioe);
 			}
 		} else {
-			JOptionPane.showMessageDialog(null, "Please, select a .txt file.");
+			JOptionPane.showMessageDialog(null, "Por gentileza, selecione um arquivo .TXT.");
 		}
 	}// GEN-LAST:event_btnOpenFileActionPerformed
 
